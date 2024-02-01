@@ -1,11 +1,9 @@
-// Selectors
 
-// const buttons = document.getElementByClassName("button")
 const buttons = document.getElementsByClassName("button")
 const cartValue = document.getElementById("cart-value")
 const cart = document.getElementById("cart")
 
-// array
+
 var items = [
     {
       name: "This was our pact",
@@ -102,12 +100,9 @@ var items = [
   
 
 function updateCart(){
-    // initialize the valu of cart - 0
-    let cart = 0;    
-    // for loop
 
-    // updated the cart value
-    
+    let cart = 0;    
+
 
     for(let i=0; i<items.length; i++){
         cart+=items[i].quantity;
@@ -116,7 +111,6 @@ function updateCart(){
 
 }
 
-// global variable
 let finalDollars = 0;
 let finalCents = 0;
 let total =0
